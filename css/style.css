@@ -1,0 +1,15 @@
+
+:root{--accent:#95b83f;--dark:#111;--panel:rgba(0,0,0,0.75);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Segoe UI,Arial,sans-serif;background:#111;color:white;}
+header{background:white;text-align:center;padding:25px;border-bottom:4px solid var(--accent);}
+.logo{max-width:420px;width:90%;}
+.layout{display:flex;min-height:75vh;}
+.studio{flex:2;background-image:url('../images/Audio-Zone-156406.jpg');background-size:cover;background-position:center;}
+.news-panel{flex:1;background:var(--panel);backdrop-filter:blur(12px);padding:40px;overflow-y:auto;}
+.news-panel h2{margin-bottom:30px;color:var(--accent);font-size:2rem;}
+.news-card{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:20px;margin-bottom:20px;}
+.news-date{color:var(--accent);margin-bottom:10px;font-size:.9rem;}
+.contact{text-align:center;padding:60px 20px;background:#181818;}
+footer{text-align:center;padding:20px;background:black;color:#888;}
+@media(max-width:900px){.layout{flex-direction:column;}.studio{min-height:350px;}.news-panel{min-height:500px;}}
